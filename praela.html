@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desculpa, Luana</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://img.freepik.com/vetores-gratis/projeto-da-bandeira-do-padrao-de-coracoes-para-o-dia-dos-namorados_1017-36052.jpg'); /* Fundo de corações */
+            background-size: cover;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff6b6b;
+            font-size: 48px;
+            margin-top: 50px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .message-box {
+            display: inline-block;
+            padding: 20px;
+            margin: 15px;
+            width: 200px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            vertical-align: top;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 18px;
+        }
+        .message-box:hover {
+            background-color: #ff6b6b;
+            color: white;
+        }
+        #message-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            font-size: 24px;
+            color: #333;
+            display: inline-block;
+            margin-top: 40px;
+            width: 60%;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 18px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .monkey-img {
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Desculpa, Luana</h1>
+
+    <div class="message-box" onclick="showMessage(0)">Clique aqui</div>
+    <div class="message-box" onclick="showMessage(1)">Clique aqui</div>
+    <div class="message-box" onclick="showMessage(2)">Clique aqui</div>
+    <div class="message-box" onclick="showMessage(3)">Clique aqui</div>
+    <div class="message-box" onclick="showMessage(4)">Clique aqui</div>
+
+    <div id="message-container"></div>
+
+    <!-- Insira a imagem baixada aqui -->
+    <img src="https://ideogram.ai/api/images/direct/42gbr2E9QrGAVhpZZ-J-kw.jpg" alt="Macaquinho segurando uma rosa" class="monkey-img" width="300px">
+
+    <footer>
+        Com todo meu amor, Nicolas
+    </footer>
+
+    <script>
+        const messages = [
+            "Luana, eu sei que errei muito. Minhas inseguranças me levaram a fazer coisas que não deveria. Eu sinto muito por te machucar com as minhas atitudes. Você é a pessoa mais importante da minha vida, e eu nunca quis te causar dor.",
+            "Eu percebi que, ao tentar proteger nosso relacionamento, eu acabei sendo a pessoa que o machucou. Isso me dói profundamente. Quero te pedir desculpas de coração, pois sei que você merece muito mais do que isso.",
+            "Sei que minhas ações causaram mágoa, e entendo se você estiver desapontada comigo. Só quero que você saiba que estou disposto a mudar, a ser a pessoa que você merece ao seu lado. Meu amor por você é mais forte do que qualquer insegurança.",
+            "Cada momento que passamos juntos é especial para mim, e eu não quero que nossas brigas apaguem isso. Eu quero fazer as coisas de forma diferente, crescer ao seu lado e mostrar o quanto você significa para mim.",
+            "Por favor, me dê mais uma chance de mostrar o quanto eu te amo, e que eu posso ser melhor. Estou disposto a fazer o que for preciso para reconquistar sua confiança, Luana. Eu te amo mais do que palavras podem expressar."
+        ];
+
+        function showMessage(index) {
+            const container = document.getElementById("message-container");
+            container.textContent = messages[index];
+        }
+    </script>
+</body>
+</html>
